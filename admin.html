@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
 
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="admin.js" defer></script>
+</head>
+
+<body>
+
+<header class="hero">
+<h1>🏆 Tournament Admin Panel</h1>
+<p>eFootball Club BD Tournament 2026</p>
+</header>
+
+<section>
+<h2>Add Team</h2>
+
+<input type="text" id="teamName" placeholder="Team Name">
+
+<button onclick="addTeam()">Add Team</button>
+
+</section>
+
+<section>
+<h2>Current Teams</h2>
+
+<div id="teamList">
+Loading...
+</div>
+
+</section>
+
+</body>
+</html>
